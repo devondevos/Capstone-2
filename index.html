@@ -11,14 +11,14 @@
     <div id="website">
         <div id="navbar">
             <div class="container">
-                <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
+                <header class="d-flex flex-wrap justify-content-center pt-3 mb-0 border-bottom">
                     <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <img class="bi me-2" width="55" height="25" src="./images/logo1.png"></img>
                     <span class="fs-4">Devon De Vos</span>
                 </a><br/>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#navbar" class="nav-link">Home Page</a></li>
-                    <li class="nav-item"><a href="#hero" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Home Page</a></li>
+                    <li class="nav-item"><a href="#info" class="nav-link">About Me</a></li>
                     <li class="nav-item"><a href="#educationSkills" class="nav-link">Education & Skills</a></li>
                     <li class="nav-item"><a href="#myWork" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#footer" class="nav-link">Contact Me</a></li>
@@ -27,25 +27,73 @@
             </div>
         </div>
         <div id="hero">
-            <div class="container col-xxl-8 px-4 py-5">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <div class="container col-xxl-8 px-4 py-0">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div class="col-10 col-sm-10 col-lg-6">
+                                <img id="profilePic" src="./images/pic1.jpg" class="mx-lg-auto img-fluid" alt="picture of me" width="600" height="400" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="fw-bold text-body-emphasis">name="Devon D. De Vos"</h1>
+                                <p>I'm a hardworking individual who is self motivated, driven by my 'insane' goals. I'm an active indivual who doesn't indulge in alcohol nor cigarettes, one of my goals is to be healthy and active until I'm 119 years of age.</p>
+                                <p><a class="bttn btn btn-lg btn-light" href="#footer">Contact Me</a></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="container col-xxl-8 px-4 py-0">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-10 col-lg-6">
-                        <img id="profilePic" src="./images/profilePic.png" class="mx-lg-auto img-fluid" alt="picture of me" width="700" height="500" loading="lazy">
+                        <img id="profilePic" src="./images/pic2.jpg" class="mx-lg-auto img-fluid" alt="picture of me" width="600" height="400" loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="fw-bold text-body-emphasis">name="Devon De Vos"</h1>
+                        <h1 class="fw-bold text-body-emphasis">name="Devon D. De Vos"</h1>
                         <p>I'm a hardworking individual who is self motivated, driven by my 'insane' goals. I'm an active indivual who doesn't indulge in alcohol nor cigarettes, one of my goals is to be healthy and active until I'm 119 years of age.</p>
+                        <p><a class="bttn btn btn-lg btn-light" href="./Cv folder/cv.docx">Download my CV</a></p>
                     </div>
                 </div>
             </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container col-xxl-8 px-4 py-0">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div class="col-10 col-sm-10 col-lg-6">
+                                <img id="profilePic" src="./images/pic3.jpg" class="mx-lg-auto img-fluid" alt="picture of me" width="600" height="400" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="fw-bold text-body-emphasis">name="Devon D. De Vos"</h1>
+                                <p>I'm a hardworking individual who is self motivated, driven by my 'insane' goals. I'm an active indivual who doesn't indulge in alcohol nor cigarettes, one of my goals is to be healthy and active until I'm 119 years of age.</p>
+                                <p><a class="bttn btn btn-lg btn-light" href="#footer">Contact Me</a></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
         <div id="myWork">
             <div class="container px-4 py-5" id="custom-cards">
                 <h2 class="headerWork pb-2">My Projects</h2>
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col">
-                        <a class="link" href="./TinDog Project/index.html">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/project1.png'); background-position: center; background-size: auto|length|cover|contain|initial|inherit;">
+                        <a class="link" href="./projects/TinDog Project/index.html">
+                        <div class="card card-link card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/project1.png');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">TinDog</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
@@ -59,7 +107,7 @@
                     </div>
                     <div class="col">
                         <a class="link" href="">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/Project2.png'); background-position: center;">
+                        <div class="card card-link card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/Project2.png'); background-position: center;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Coming Soon</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
@@ -73,7 +121,7 @@
                     </div>
                     <div class="col">
                         <a class="link" href="">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/Project2.png'); background-position: center;">
+                        <div class="card card-link card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/Project2.png'); background-position: center;">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Coming Soon</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
@@ -178,6 +226,12 @@
                   <p>
                     My religious belief is Christianity.
                   </p>
+                  <p>
+                    I enjoy watching anime occasionally
+                  </p>
+                  <p>
+                    <a id="cv" class="link" href="./Cv folder/cv.docx">Click Here to download my Resume/CV</a>
+                  </p>
                 </div>
               </div>
         </div>
@@ -189,7 +243,7 @@
                         <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
                         </a>
-                        <span class="mb-3 mb-md-0 text-body-secondary">Devon De Vos</span>
+                        <span class="mb-3 mb-md-0 text-body-secondary">Devon Denton De Vos</span>
                     </div>
               
                     <ul class="nav row-lg-4 justify-content-start list-unstyled d-flex">
